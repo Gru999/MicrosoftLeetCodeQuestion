@@ -23,21 +23,21 @@ static int FirstUniqIterativ(int[] myArray) {
     //}
     //return -1;
 
-
-    int res = 0; Array.Sort(myArray);
-    foreach (int i in myArray) {
-        res = res ^ i;
-        if (res != 0 && res != i) {
-            return 15 - i;
-        }
-        //if (res != 0 && res != i) {
-        //    res = ~i;
-        //    return res = Array.IndexOf(myArray, res);
-        //} 
-    }
-    return res;
+    ////XOR, reverse bit calc - needs fixing beyond 9
+    //int res = 0; Array.Sort(myArray);
+    //foreach (int i in myArray) {
+    //    res = res ^ i;
+    //    if (res != 0 && res != i) {
+    //        return 15 - i;
+    //    }
+    //    //if (res != 0 && res != i) {
+    //    //    res = ~i;
+    //    //    return res = Array.IndexOf(myArray, res);
+    //    //} 
+    //}
+    //return res;
 }
 
-Console.WriteLine(FirstUniqIterativ(myArray));
-//Console.WriteLine(myArray[FirstUniqIterativ(myArray)]);
+//Console.WriteLine(FirstUniqIterativ(myArray));
+Console.WriteLine(myArray[FirstUniqIterativ(myArray)]);
 Console.ReadLine();
