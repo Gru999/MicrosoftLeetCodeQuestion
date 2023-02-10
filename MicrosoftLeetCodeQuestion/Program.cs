@@ -31,7 +31,7 @@ static int FirstUniqIterativ(int[] myArray) {
     //        return 15 - i;
     //    }
     //    //if (res != 0 && res != i) {
-    //    //    res = ~i;
+    //    //    res = ~i; //could use &= for bitwise subtraction
     //    //    return res = Array.IndexOf(myArray, res);
     //    //} 
     //}
